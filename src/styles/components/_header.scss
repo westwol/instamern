@@ -1,0 +1,116 @@
+.header {
+    position: relative;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 12px 0;
+    background-color: $background-light;
+    z-index: 1;
+  
+    &__logo {
+      display: flex !important;
+      align-items: center;
+  
+      img {
+        height: 25px;
+      }
+    }
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+
+    i.icon {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 19px;
+        color: $font-dark;
+    }
+
+    .ui.image.avatar {
+        width: 25px;
+        height: 25px;
+        border: 1px solid $border-dark;
+        padding: 2px;
+    }
+
+    i.icon,
+    .ui.image.avatar {
+        margin: 0 0 0 19px;
+        &:hover {
+        cursor: pointer;
+        }
+    }
+}
+
+.header__search {
+    .ui.left.icon.input {
+      width: 100%;
+    }
+  
+    .results {
+      max-height: 60vh;
+      overflow-y: scroll;
+    }
+  
+    &__item {
+      display: flex;
+      align-items: center;
+  
+      .ui.image {
+        width: 35px !important;
+        height: 35px !important;
+        border-radius: 50% !important;
+        margin-right: 20px;
+      }
+  
+      p {
+        margin: 0;
+        color: $font-dark;
+  
+        &:first-of-type {
+          font-weight: bold;
+        }
+        &:last-of-type {
+          color: $font-grey;
+        }
+      }
+    }
+  }
+
+.header__filtered-user {
+    .ui.left.icon.input {
+      width: 100%;
+    }
+  
+    .results {
+      max-height: 60vh;
+      overflow-y: scroll;
+    }
+  
+    &__item {
+      display: flex;
+      align-items: center;
+  
+      .ui.image {
+        width: 35px !important;
+        height: 35px !important;
+        border-radius: 50% !important;
+        margin-right: 20px;
+      }
+  
+      p {
+        margin: 0;
+        color: $font-dark;
+  
+        &:first-of-type {
+          font-weight: bold;
+        }
+        &:last-of-type {
+          color: $font-grey;
+        }
+      }
+    }
+}

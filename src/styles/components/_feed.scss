@@ -1,0 +1,97 @@
+.feed {
+    padding-top: 50px;
+    height: calc(100vh - 48px);
+}
+
+.feed__post {
+    margin-bottom: 50px;
+    border: 1px solid $border-grey;
+
+    &-user {
+      background-color: $background-light;
+      padding: 15px !important;
+      color: $font-dark;
+
+      img {
+        margin-right: 15px !important;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &-photo {
+      height: 600px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.95;
+      }
+    }
+
+    &-actions {
+      padding: 5px 5px;
+
+      i {
+        margin-right: 10px !important;
+      }
+    }
+
+    &-form {
+      > form {
+        position: relative !important;
+      }
+    }
+}
+
+.feed__comment-form {
+    position: absolute !important;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+
+    .field {
+        margin: 0 !important;
+        width: 100%;
+
+        .ui.input {
+        height: 60px;
+        input {
+            border: 0;
+            border-top: 1px solid $border-grey;
+            border-radius: 0;
+            padding-right: 80px;
+        }
+        }
+    }
+
+    .ui.button {
+        background-color: transparent;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        height: 100%;
+
+        &:hover {
+        background-color: transparent;
+        }
+    }
+}
+
+.feed__post-actions {
+  i {
+    font-size: 16px !important;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .like.active {
+    color: $danger;
+  }
+}
