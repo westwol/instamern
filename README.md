@@ -10,7 +10,7 @@
 
 Frontend:
 * React
-* Redu
+* Redux
 * React-redux
 * React-router
 * Redux-tunk
